@@ -1,0 +1,10 @@
+.Banner {
+  background-color: black;
+  box-sizing: border-box;
+  padding: 2rem;
+  text-align: center;
+
+  &__Text {
+    color: red;
+  }
+}

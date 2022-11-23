@@ -1,0 +1,27 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "umd",
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "jsx": "react",
+    "noEmit": true,    
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "isolatedModules": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "baseUrl": "./src",
+    "typeRoots": ["node_modules/@types", "src/typings"],
+    "moduleResolution": "node",
+    "forceConsisten, "index.tsx", "App.tsx"tCasingInFileNames": true,
+    "esModuleInterop": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

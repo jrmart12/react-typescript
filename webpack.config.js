@@ -9,9 +9,11 @@ module.exports = {
     filename: 'bundle.js',
   },
   devServer: {
-    static: {
-      directory: path.resolve(__dirname, './dist'),
-    },
+    static: path.join(__dirname, './src'),
+    port: 3000,
+    hot: 'only',
+    compress: true,
+    open: true,
   },
   module: {
     rules: [
@@ -36,6 +38,14 @@ module.exports = {
           },
           'sass-loader',
         ],
+      },
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+        type: 'asset/inline',
       },
     ],
   },

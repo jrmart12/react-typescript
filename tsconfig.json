@@ -9,16 +9,17 @@
     "sourceMap": true,
     "outDir": "./dist",
     "rootDir": "./",
-    "isolatedModules": true,
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "baseUrl": "./src",
-    "typeRoots": ["node_modules/@types", "src/typings"],
+    "baseUrl": ".",
+    "typeRoots": ["src/types", "node_modules/@types"],
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowJs": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules"]
+  "include": ["src", "LinkerStudio/core/components/Banner", "src/types"],
+  "exclude": ["node_modules"],
+  "extends": "./tsconfig.paths.json"
 }
